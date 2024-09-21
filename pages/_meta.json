@@ -1,7 +1,8 @@
 {
-  "index": "Introduction",
+  "index": "소개",
   "about": {
     "title": "이 문서에 대해",
     "type": "page"
-  }
+  },
+  "programming-languages": "프로그래밍 언어"
 }

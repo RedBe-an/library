@@ -11,8 +11,6 @@ const LIBRARY_LOGO = (props: ComponentProps<"svg">): ReactElement => (
   </svg>
 );
 
-const FOOTER_LINK_TEXT = <>Powered By LIBRARY</>;
-
 const config: DocsThemeConfig = {
   logo: (
     <span>
@@ -34,7 +32,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: function useText() {
       const { locale } = useRouter();
-      return FOOTER_LINK_TEXT;
+      return (
+        <>
+          MIT {new Date().getFullYear()} ©{" RedBe-an"}
+        </>
+      );
     },
   },
   head: function useHead() {
@@ -69,7 +71,7 @@ const config: DocsThemeConfig = {
     );
   },
   toc: {
-    backToTop: true,
+    backToTop: false,
   },
   editLink: {
     text: "깃허브에서 이 페이지 편집하기 →",
@@ -85,6 +87,18 @@ const config: DocsThemeConfig = {
         LIBRARY 더 알아보기 →
       </a>
     ),
+  },
+  search: {
+    placeholder: "찾아보기...",
+  },
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: "밝게",
+        dark: "어둡게",
+        system: "시스템",
+      };
+    },
   },
 };
 
