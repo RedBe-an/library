@@ -15,6 +15,8 @@ import { FileTree } from "nextra/components";
 
 위처럼 변수에는 각각 값과 이름, 주소가 존재하는데, 주소는 다른 프로그래밍 언어를 배울 때 알아보도록 하겠습니다.
 
+## 변수 선언
+
 파이썬에서 변수를 선언할 때는
 
 ```python
@@ -34,7 +36,7 @@ print(variable)
 import { Callout } from 'nextra/components'
  
 <Callout type="info">
-  <strong>Print가 뭐에요?</strong><br />
+  <strong>`print()`가 뭐에요?</strong><br />
 이때 print라는 함수(함수는 조금 후에 살펴볼 겁니다)는 우리가 입력한 값을 출력해주는 역할을 합니다.
 
 ```python
@@ -63,10 +65,35 @@ variable_1 = "문자열이에요"
 variable_2 = 1
 variable_3 = 1.0
 variable_3 = ['가나다라']
-...
+# 기타 등등...
 ```
 
-이때 이러한 값의 유형을 _타입_ 이라고 부르는데, 이는 나중에 알아보도록 하겠습니다.
+또한 다음과 같이 앞에서 배웠던 연산자를 사용할 수 있습니다.
+
+```python
+variable_1 = 1
+variable_2 = 2
+print(variable_1 + variable_2)
+```
+
+```
+3
+```
+
+값을 저장할 때도 연산을 사용할 수 있습니다.
+
+```python
+variable_1 = 1
+variable_2 = 2
+variable_3 = variable_1 + variable_2
+print(variable_3)
+```
+
+```
+3
+```
+
+이때 이러한 값의 유형을 _타입_ 이라고 부르는데, 이는 다음 장에서 알아보도록 하겠습니다.
 
 좋습니다! 이 장에서는 변수를 선언하고 불러오는 법에 대해 알아보았습니다. \
-다음 장에서는 제어문에 대해 알아보도록 하겠습니다!
+다음 장에서는 타입에 대해 알아보도록 하겠습니다!
